@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <div class="title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 24 24" height="30px" width="30px">
+                <title>view-dashboard</title>
+                <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+            </svg>Dashboard</div>
+        <div class="item " id="one"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>home-variant</title>
+                <path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" />
+            </svg><span class="word">Home</span></div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>card-account-details-outline</title>
+                <path
+                    d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14" />
+            </svg>Profile</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>message-text</title>
+                <path
+                    d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+            </svg>Messages</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>history</title>
+                <path
+                    d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+            </svg>History</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>note</title>
+                <path d="M14,10V4.5L19.5,10M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V9L15,3H5Z" />
+            </svg>Tasks</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>account-group</title>
+                <path
+                    d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
+            </svg>Communitites</div>
+        <div class="item" id="setting"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>cog</title>
+                <path
+                    d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+            </svg>Settings</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>help</title>
+                <path
+                    d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z" />
+            </svg>Support</div>
+        <div class="item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>security</title>
+                <path
+                    d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" />
+            </svg>Privacy</div>
+    </div>
+    </div>
+
+    <div class="container">
+
+        <div class="main-header">
+            <div class="top">
+                <div class="col-1">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg></div>
+                    <input type="text">
+                </div>
+                <div class="col-2">
+                    <div class="bell"><svg xmlns="http://www.w3.org/2000/svg" height="22px" width="22px" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg></div>
+                    <div class="profile"><svg xmlns="http://www.w3.org/2000/svg" height="22px" width="22px" viewBox="0 0 24 24"><title>account-settings</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14M7,22H9V24H7V22M11,22H13V24H11V22M15,22H17V24H15V22Z" /></svg></div>
+                    <p class="username">Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="bottom">
+                    <div class="icon"><img src="batman.svg" alt=""></div>
+                    <div class="user">hi there <span>morgan ookley (@morgan)</span></div>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="col-1-heading">Your Projects</div>
+            <div class="col-2-heading">Announcement</div>
+            <div class="col-1">
+                <div class="card">
+                    <h2>Project Alpha</h2>
+                    <p>Building an innovative AI-driven chatbot that improves user interaction on websites by providing personalized assistance and responses.</p>
+                </div>
+                <div class="card">
+                    <h2>Data Analysis Pipeline</h2>
+                    <p>Developing a data processing pipeline for real-time analysis of e-commerce trends, leveraging machine learning to forecast sales and optimize stock levels.</p>
+                </div>
+                <div class="card">
+                    <h2>Mobile Health App</h2>
+                    <p>Creating a health monitoring app that tracks physical activity, sleep, and vital signs to help users maintain a balanced lifestyle.</p>
+                </div>
+                <div class="card">
+                    <h2>Community Platform</h2>
+                    <p>Designing a social platform for community engagement, enabling users to share local news, organize events, and connect with neighbors.</p>
+                </div>
+                <div class="card">
+                    <h2>Website Redesign</h2>
+                    <p>Revamping the company’s website to enhance user experience, improve accessibility, and boost SEO performance.</p>
+                </div>
+                <div class="card">
+                    <h2>IoT Smart Home Integration</h2>
+                    <p>Implementing an IoT solution to connect and control smart home devices from a single application, with a focus on security and ease of use.</p>
+                </div>
+            </div>
+            
+            <div class="col-2">
+                <div class="anouncements">
+                    <div class="anouncement-content">
+                        <p>
+                        <h2>Site Maintenance</h2>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour,
+                        </p>
+                    </div>
+                    <div class="anouncement-content">
+                        <p>
+                        <h2>Site Maintenance</h2>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour,
+                        </p>
+                    </div>
+                    <div class="anouncement-content">
+                        <p>
+                        <h2>Site Maintenance</h2>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour,
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="trending">
+                    <div class="trending-heading">Trending</div>
+                    <div class="content">
+                        <div class="row1">
+                            <div class="col1"><svg fill="rgb(255, 128, 0)" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <title>mouse-left-click-outline</title>
+                                    <path
+                                        d="M13 9V1.07C13.7 1.16 14.37 1.33 15 1.59C17.33 2.53 19.11 4.53 19.75 7C19.91 7.64 20 8.31 20 9H13M17.66 7C17.18 5.65 16.23 4.5 15 3.81V7H17.66M6 15V13H18V15C18 16.59 17.37 18.12 16.24 19.24C15.12 20.37 13.59 21 12 21C10.41 21 8.88 20.37 7.76 19.24C6.63 18.12 6 16.59 6 15M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15M11 9V1.07C7.06 1.56 4 4.92 4 9H11Z" />
+                                </svg></div>
+                            <div class="col2">
+                                <div class="r1">@tegan</div>
+                                <div class="r2">World Peace Builder</div>
+                            </div>
+                        </div>
+                        <div class="row1">
+                            <div class="col1"><svg xmlns="http://www.w3.org/2000/svg" fill="rgb(82, 159, 231)"
+                                    viewBox="0 0 24 24">
+                                    <title>angle-obtuse</title>
+                                    <path
+                                        d="M21,19H9.31L4.07,5.36L5.93,4.64L8.96,12.5C9.5,12.29 10.09,12.17 10.71,12.17V12.17C13.38,12.17 15.56,14.34 15.58,17H21V19M10.69,17H13.58C13.56,15.42 12.3,14.17 10.71,14.17C10.34,14.17 10,14.24 9.67,14.36L10.69,17Z" />
+                                </svg></div>
+                            <div class="col2">
+                                <div class="r1">@morgan</div>
+                                <div class="r2">Super Cool Project</div>
+                            </div>
+                        </div>
+                        <div class="row1">
+                            <div class="col1"><svg fill="rgba(105, 222, 32, 0.583)" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <title>audio-input-rca</title>
+                                    <path
+                                        d="M11 6V12H5V6H7V2C7 1.45 7.45 1 8 1S9 1.45 9 2V6H11M5 14V16C5 17.3 5.84 18.4 7 18.82V23H9V18.82C10.16 18.4 11 17.3 11 16V14H5M17 6V2C17 1.45 16.55 1 16 1S15 1.45 15 2V6H13V12H19V6H17M13 14V16C13 17.3 13.84 18.4 15 18.82V23H17V18.82C18.16 18.4 19 17.3 19 16V14H13Z" />
+                                </svg></div>
+                            <div class="col2">
+                                <div class="r1">@kendall</div>
+                                <div class="r2">Life Changing App</div>
+                            </div>
+                        </div>
+                        <div class="row1">
+                            <div class="col1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>alien-outline</title>
+                                    <path
+                                        d="M10.31 10.93C11.33 12.57 11.18 14.5 9.96 15.28C8.74 16.04 6.92 15.33 5.89 13.69C4.87 12.05 5.03 10.1 6.25 9.34C7.47 8.58 9.29 9.29 10.31 10.93M12 17.75C14 17.75 14.5 17 14.5 17C14.5 17 14 19 12 19C10 19 9.5 17.03 9.5 17C9.5 17 10 17.75 12 17.75M17.75 9.34C18.97 10.1 19.13 12.05 18.11 13.69C17.08 15.33 15.26 16.04 14.04 15.28C12.82 14.5 12.67 12.57 13.69 10.93C14.71 9.29 16.53 8.58 17.75 9.34M12 20C14.5 20 20 14.86 20 11C20 7.14 16.41 4 12 4C7.59 4 4 7.14 4 11C4 14.86 9.5 20 12 20M12 2C17.5 2 22 6.04 22 11C22 15.08 16.32 22 12 22C7.68 22 2 15.08 2 11C2 6.04 6.5 2 12 2Z" />
+                                </svg></div>
+                                <div class="col2">
+                                    <div class="r1">@alex</div>
+                                    <div class="r2">No Traffic Maker</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+
+</html>
